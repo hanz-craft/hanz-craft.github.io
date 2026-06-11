@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Hanziey's Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-title">Teacher Hanziey's</span>
+                <span class="logo-subtitle">Learning Hub</span>
+            </a>
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-links" id="nav-links-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#worksheets">Worksheets</a></li>
+                <li><a href="#bible">Bible Corner</a></li>
+                <li><a href="#shop">Hanz Craft Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-container">
+            <span class="badge">Learn • Play • Create</span>
+            <h1>Welcome to Teacher Hanziey's Learning Hub!</h1>
+            <p>Interactive games, creative activities, and educational resources designed to make learning fun for every child. Trusted by students, parents, and fellow teachers to make learning meaningful and fun.</p>
+            <div class="hero-buttons">
+                <a href="#games" class="btn btn-primary">Explore Games</a>
+                <a href="#worksheets" class="btn btn-secondary">Browse Worksheets</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="🔍 Search games and resources...">
+            </div>
+        </section>
+
+        <section class="highlights-grid">
+            <div class="card highlight-card searchable">
+                <span class="card-tag gold-tag">⭐ Game of the Week</span>
+                <h2>The Body Parts Adventure</h2>
+                <p>Practice body vocabulary through interactive play.</p>
+                <a href="https://hanz-craft.github.io/the-body-parts/" target="_blank" class="btn btn-accent">Play Now</a>
+            </div>
+
+            <div class="card word-card">
+                <span class="card-tag blue-tag">📝 Word of the Day</span>
+                <div class="word-display">Family</div>
+                <p class="word-sentence">"This is my family."</p>
+                <div class="word-challenge">
+                    <strong>Challenge:</strong> Can you name three family members?
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="section-container">
+            <h2 class="section-title">Featured Games</h2>
+            <div class="grid-three-columns">
+                
+                <div class="card searchable">
+                    <div class="thumbnail-placeholder sage-bg">
+                        <span>🧍🏻‍♂️</span> </div>
+                    <div class="card-body">
+                        <h3>The Body Parts</h3>
+                        <p>Learn body vocabulary through fun activities.</p>
+                        <a href="https://hanz-craft.github.io/the-body-parts/" target="_blank" class="btn btn-primary card-btn">Play Now</a>
+                    </div>
+                </div>
+
+                <div class="card searchable">
+                    <div class="thumbnail-placeholder blue-bg">
+                        <span>🏡</span> </div>
+                    <div class="card-body">
+                        <h3>The Family</h3>
+                        <p>Explore family members through interactive learning.</p>
+                        <a href="https://hanz-craft.github.io/The-Family/" target="_blank" class="btn btn-primary card-btn">Play Now</a>
+                    </div>
+                </div>
+
+                <div class="card searchable">
+                    <div class="thumbnail-placeholder beige-bg">
+                        <span>✨</span> </div>
+                    <div class="card-body">
+                        <h3>Coming Soon</h3>
+                        <p>More exciting educational games are on the way.</p>
+                        <button class="btn btn-disabled card-btn" disabled>Coming Soon</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="grid-two-columns">
+            
+            <div class="card">
+                <h2 class="section-title-left">⚡ Latest Uploads</h2>
+                <ul class="list-updates">
+                    <li><span class="dot sage-dot"></span> Family Game Added</li>
+                    <li><span class="dot blue-dot"></span> Body Parts Adventure Released</li>
+                    <li><span class="dot gold-dot"></span> Bible Corner Launching Soon</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2 class="section-title-left">🏆 Student Achievements</h2>
+                <div class="achievements-container">
+                    
+                    <div class="achievement-item">
+                        <div class="avatar-placeholder">🌟</div>
+                        <div>
+                            <h4>Student of the Week</h4>
+                            <p>Great job participating!</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="avatar-placeholder">📚</div>
+                        <div>
+                            <h4>Reading Star</h4>
+                            <p>Excellent phonics progress!</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="avatar-placeholder">🎨</div>
+                        <div>
+                            <h4>Creative Learner</h4>
+                            <p>Amazing handmade drawings!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="bible" class="section-container bible-section">
+            <h2 class="section-title">Bible Corner</h2>
+            <div class="grid-three-columns">
+                <div class="card bible-card">
+                    <h3>📖 Verse of the Week</h3>
+                    <p class="verse-text">"Train up a child in the way he should go..."</p>
+                    <span class="verse-reference">— Proverbs 22:6</span>
+                </div>
+                <div class="card bible-card">
+                    <h3>🙏 Prayer Focus</h3>
+                    <p>Pray for our families and teachers.</p>
+                </div>
+                <div class="card bible-card">
+                    <h3>🎨 Bible Activity</h3>
+                    <p>Family Prayer Tree</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="worksheets" class="section-container text-center">
+            <h2 class="section-title">Worksheets</h2>
+            <div class="card standalone-card">
+                <p class="coming-soon-text">📄 Coming Soon! Printable learning resources for young learners.</p>
+            </div>
+        </section>
+
+        <section id="shop" class="section-container">
+            <div class="card shop-card">
+                <div class="shop-content">
+                    <h2>Hanz Craft Shop</h2>
+                    <p>Discover handmade busy books and educational resources designed to make learning fun.</p>
+                    <a href="https://www.facebook.com/craftshg" target="_blank" class="btn btn-shop">Visit Facebook Shop</a>
+                </div>
+                <div class="shop-icon-area">🧸</div>
+            </div>
+        </section>
+
+        <section id="about" class="section-container">
+            <div class="about-wrapper card">
+                <div class="about-image-area">
+                    <div class="photo-placeholder">
+                        <span>👩‍🏫</span>
+                        <p><img src="teacher.jpg"></p>
+                    </div>
+                </div>
+                <div class="about-text-area">
+                    <h2>About Teacher Hanziey</h2>
+                    <p>Hello! I'm Teacher Hanziey, a kindergarten ESL teacher who loves creating engaging games, educational resources, and hands-on learning experiences. My goal is to make learning meaningful, joyful, and accessible for every child.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-container text-center">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="card standalone-card contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>Let's Connect!</h3>
+                <p>For inquiries about busy books, educational resources, and collaborations, feel free to connect with us.</p>
+                <a href="https://www.facebook.com/craftshg" target="_blank" class="contact-link">Facebook: Hanz Craft</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <h3>Teacher Hanziey's Learning Hub</h3>
+        <p class="footer-tagline">Learn • Play • Create</p>
+        <p class="copyright">© 2026 Teacher Hanziey's Learning Hub</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
