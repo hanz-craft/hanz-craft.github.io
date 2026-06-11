@@ -365,6 +365,12 @@ h1, h2, h3, .logo-title {
 }
 
 /* --- CARD MEDIA THUMBNAILS --- */
+.thumbnail-placeholder {
+    height: 180px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: 16px;
+}
 .thumbnail-placeholder img {
     width: 100%;
     height: 100%;
