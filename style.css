@@ -650,8 +650,7 @@ h1, h2, h3, .logo-title {
 .floating-background span {
     position: absolute;
     font-size: 2rem;
-    opacity: 0.18;
-    animation: float 25s linear infinite;
+    
 }
 
 /* Random positions */
