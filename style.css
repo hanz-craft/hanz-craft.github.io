@@ -245,8 +245,6 @@ h1, h2, h3, .logo-title {
 .card {
     background: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(10px);
-}
-
     display: flex;
     flex-direction: column;
 }
@@ -631,23 +629,34 @@ h1, h2, h3, .logo-title {
 /* Floating Background */
 .floating-background {
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     pointer-events: none;
-    z-index: -1;
+    z-index: 0;
+}
+
+.navbar,
+.hero,
+.main-content,
+.footer {
+    position: relative;
+    z-index: 1;
 }
 
 .floating-background span {
     position: absolute;
-    font-size: 4rem; /* Bigger objects */
-    opacity: 0.15;
+    font-size: 8rem; /* Bigger objects */
+    opacity: 0.35;
     animation: floatUp linear infinite;
 }
 
 /* Random positions and sizes */
 .floating-background span:nth-child(1) {
     left: 5%;
-    font-size: 5rem;
+    font-size: 10rem;
     animation: floatUp 22s linear infinite;
 }
 
@@ -660,7 +669,7 @@ h1, h2, h3, .logo-title {
 
 .floating-background span:nth-child(3) {
     left: 28%;
-    font-size: 6rem;
+    font-size: 12rem;
     animation: floatUp 25s linear infinite;
     animation-delay: -10s;
 }
